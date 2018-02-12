@@ -411,6 +411,9 @@ void CodecVideoOpen(VideoDecoder * decoder, int codec_id)
 	    case AV_CODEC_ID_H264:
 		name = VideoHardwareDecoder ? "h264_vdpau" : NULL;
 		break;
+	    case AV_CODEC_ID_HEVC:
+		name = VideoHardwareDecoder ? "hevc_vdpau" : NULL;
+		break;
 	}
     }
 
